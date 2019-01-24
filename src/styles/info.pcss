@@ -1,0 +1,111 @@
+$black: #131313;
+$light-black: #252424;
+$grey: #979797;
+$tan: #dfbf61;
+$warm-grey: #8f8e8e;
+$faded-orange: #f08e52;
+$white: #ffffff;
+
+.info {
+  background-color: $black;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $grey;
+
+  padding: 5rem 6rem;
+
+  p {
+    margin: 0;
+  }
+
+  hr {
+    height: 1px;
+    border: 0;
+    background: $light-black;
+  }
+  
+  .heading {
+    font-family: PTSerif;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.1px;
+    color: $tan;
+
+    padding-bottom: 2.5rem;
+  }
+
+  .sub-heading {
+    font-family: Arial;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: $warm-grey;
+
+    padding-bottom: 2.5rem;
+  }
+
+  .time-table {
+    margin: 0 4rem;
+
+    .section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+      margin-top: 2.5rem;
+
+      .event {
+        margin-left: 2rem;
+
+        :first-child {
+          font-family: PTSerif;
+          font-size: 38px;
+          font-weight: bold;
+          letter-spacing: 0.1px;
+          color: $faded-orange;
+        }
+
+        :nth-child(2) {
+          font-family: PTSerif;
+          font-size: 18px;
+          font-weight: bold;
+          font-style: italic;
+          letter-spacing: 0.1px;
+          color: $warm-grey;
+        }
+      }
+
+      .time {
+        margin-right: 2rem;
+
+        :first-child {
+          font-family: PTSans-Caption;
+          font-size: 32px;
+          font-weight: bold;
+          letter-spacing: 0.1px;
+          color: $white;
+        }
+
+        :nth-child(2) {
+          font-family: PTSans-Caption;
+          font-size: 24px;
+          font-weight: bold;
+          letter-spacing: 0.1px;
+          color: $warm-grey;
+        }
+      }
+    }
+  }
+
+  .more-time {
+    margin-top: 2.5rem;
+    
+    text-align: center;
+
+    font-family: PTSans-Caption;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: $warm-grey;
+  }
+}
