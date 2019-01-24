@@ -1,0 +1,72 @@
+$black: #131313;
+$tan: #dfbf61;
+$warm-grey: #8f8e8e;
+$white: #ffffff;
+
+.contact-section {
+  background-color: $black;
+  padding: 5rem 6rem;
+
+  .heading {
+    font-family: PTSerif;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.1px;
+    color: $tan;
+
+    margin-bottom: 5rem;
+  }
+
+  .contact-points {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 5rem;
+
+    .contact-point {
+      :first-child {
+        font-family: PTSans-Caption;
+        font-size: 24px;
+        letter-spacing: 0.1px;
+        color: $warm-grey;
+      }
+
+      :nth-child(2) {
+        font-family: PTSerif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        color: $white;
+
+        a {
+          text-decoration: none;
+          font-family: PTSerif;
+          font-size: 24px;
+          font-weight: bold;
+          font-style: italic;
+          color: $white;
+        }
+        
+        img {
+          width: 3rem;
+        }
+      }
+    }
+  }
+
+  .gdpr {
+    hr {
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-family: PTSans-Caption;
+      font-size: 18px;
+      letter-spacing: 0.1px;
+      color: $warm-grey;
+      margin: 0.5rem 0;
+    }
+  }
+}
