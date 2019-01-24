@@ -1,0 +1,55 @@
+$black: #000000;
+$tan: #dfbf61;
+$warm-grey: #8f8e8e;
+
+.intro {
+  display: flex;
+  flex-direction: row;
+
+  padding: 6rem 6rem;
+
+  div {
+    flex: 1;
+  }
+
+  .video {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    iframe {
+      height: 20vw;
+      width: 95%;
+    }
+  }
+  
+  .teaser {
+    div {
+      padding-right: 5rem;
+    }
+
+    .intro-1 {
+      font-family: PTSerif;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: italic;
+      color: $black;
+    }
+
+    .intro-2 {
+      font-family: PTSerif;
+      font-size: 42px;
+      font-weight: bold;
+      font-style: italic;
+      color: $tan;
+      letter-spacing: 1.9px;
+    }
+
+    .intro-3 {
+      font-family: Arial;
+      font-size: 24px;
+      line-height: 1.29;
+      color: $warm-grey;
+    }
+  }
+}
