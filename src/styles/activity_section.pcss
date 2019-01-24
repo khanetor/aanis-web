@@ -1,3 +1,120 @@
+$black: #000000;
+$tan: #dfbf61;
+$warm-grey: #8f8e8e;
+$faded-orange: #f08e52;
+
 .activity-section {
-  
+  padding: 5rem 6rem;
+
+  .teaser {
+    font-family: PTSerif;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.1px;
+    color: $black;
+    margin-bottom: 1rem;
+  }
+
+  .heading {
+    font-family: PTSerif;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.1px;
+    color: $tan;
+    margin-bottom: 2rem;
+  }
+
+  .summary {
+    font-family: Arial;
+    font-size: 24px;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    color: $warm-grey;
+    margin-bottom: 3rem;
+  }
+
+  .events {
+    .event {
+      .title {
+        margin-left: 2em;
+        margin-bottom: 2rem;
+
+        :first-child {
+          font-family: PTSerif;
+          font-size: 38px;
+          font-weight: bold;
+          font-style: italic;
+          color: $faded-orange;
+          letter-spacing: 0.1px;
+        }
+
+        :nth-child(2) {
+          font-family: PTSans-Caption;
+          font-size: 24px;
+          font-weight: bold;
+          letter-spacing: 0.1px;
+          color: $warm-grey;
+        }
+      }
+
+      .detail {
+        display: flex;
+        flex-direction: row;
+
+        .image {
+          flex: 1;
+
+          img {
+            max-width: 100%;
+          }
+        }
+
+        .info {
+          flex: 1;
+
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: space-between;
+
+          .time {
+            font-family: PTSans-Caption;
+            font-size: 18px;
+            letter-spacing: 0.1px;
+            color: $warm-grey;
+            text-align: right;
+          }
+
+          .location {
+            font-family: PTSans-Caption;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 0.1px;
+            color: $warm-grey;
+            text-align: right;
+          }
+
+          .description {
+            text-align: right;
+            margin-left: 3rem;
+            font-family: Arial;
+            font-size: 18px;
+            letter-spacing: 0.1px;
+            color: $warm-grey;
+          }
+        }
+
+        .link {
+          a {
+            font-family: PTSans-Caption;
+            font-size: 18px;
+            letter-spacing: 0.1px;
+            color: $faded-orange;
+          }
+        }
+      }
+    }
+  }
 }
