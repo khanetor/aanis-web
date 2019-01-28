@@ -1,0 +1,3 @@
+# Äänis
+
+Äänis static website
