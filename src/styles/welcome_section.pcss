@@ -3,7 +3,7 @@ $tan: #dfbf61;
 $warm-grey: #8f8e8e;
 $white: #ffffff;
 
-.welcome-section{
+.welcome-section {
   background-color: $black;
   background-image: linear-gradient(rgba(0, 0, 0, 0.76),
                                     rgba(0, 0, 0, 0.76)), 
@@ -74,6 +74,23 @@ $white: #ffffff;
       font-size: 32px;
       font-weight: bold;
       letter-spacing: 1.5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .welcome-section {
+    width: 100%;
+    padding: 2rem;
+
+    .center {
+      margin-top: 4rem;
+      margin-bottom: 5rem;
+
+      .greeting {
+        font-size: 38px;
+        letter-spacing: 1.4px;
+      }
     }
   }
 }

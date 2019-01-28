@@ -31,12 +31,20 @@ p {
   justify-content: center;
   text-decoration: none;
 
+  text-align: center;
+
   border-color: $tan;
   border-width: 3px;
   border-radius: 5px;
   border-style: solid;
 
   padding: 1rem 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .button {
+    padding: 0.5rem 0.5rem;
+  }
 }
 
 @import "./welcome_section.pcss";

@@ -6,7 +6,7 @@ $warm-grey: #8f8e8e;
   display: flex;
   flex-direction: row;
 
-  padding: 6rem 6rem;
+  padding: 6rem;
 
   div {
     flex: 1;
@@ -50,6 +50,27 @@ $warm-grey: #8f8e8e;
       font-size: 24px;
       line-height: 1.29;
       color: $warm-grey;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .intro-section {
+    width: 100%;
+    padding: 2rem;
+    flex-direction: column;
+
+    .video {
+      iframe {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .teaser {
+      div {
+        padding-right: 0;
+      }
     }
   }
 }

@@ -98,3 +98,22 @@ $white: #ffffff;
     color: $warm-grey;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .info-section {
+    width: 100%;
+    padding: 2rem;
+
+    .time-table {
+      margin: 0;
+
+      .section {
+        flex-direction: column;
+
+        .event {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

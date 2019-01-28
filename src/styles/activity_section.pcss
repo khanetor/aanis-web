@@ -38,7 +38,7 @@ $faded-orange: #f08e52;
   .events {
     .event {
       .title {
-        margin-left: 2em;
+        margin-left: 2rem;
         margin-bottom: 2rem;
 
         :first-child {
@@ -116,6 +116,21 @@ $faded-orange: #f08e52;
             border-color: $faded-orange;
             border-width: 2px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .activity-section {
+    width: 100%;
+    padding: 2rem;
+
+    .events {
+      .event {
+        .title {
+          margin-left: 0;
         }
       }
     }
